@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- contains high score link and countdown timer each as a floated h2 -->
+    <header>
+        <h2 class="d-inline h4"><a href="#">View High Scores</a></h2>
+        <h2 class="d-inline float-right h4" id="time-left">Time left: <span id="display-time-left">60</span></h2>
+    </header>
+
+    <!-- main section contains the body of the quiz -->
+    <main class="w-50 mx-auto text-center mt-5">
+        <div id="quiz-area">
+
+            <!-- holds intro paragraph and start button - initially visible, hidden when clicked -->
+            <div id="start-area" class="">
+                <h1>Coding Quiz Challenge</h1>
+                <p class="mt-4">Answer the following coding questions within the time limit. Incorrect answers will
+                    penalize your score&sol;time by ten seconds.</p>
+                <button id="start-btn" type="button" class="btn btn-quiz mt-4">Start quiz</button>
+            </div>
+
+            <!-- empty div, initially hidden, shown when clicked; js will add a paragraph for the question and 4 buttons for answers -->
+            <div id="question-area" class="text-left d-none">
+            </div>
+
+            <!-- empty div, initially hidden, shown when the last question is answered -->
+            <div id="all-done" class="text-left d-none">
+                <h1>All done!</h1>
+                <p>Your final score is <span id="final-score"></span>.</p>
+                <p>Enter initials:
+                    <input type="text" width="10" name="initials"> <Button id="initials" type="button"
+                        class="btn btn-quiz">Submit</Button>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

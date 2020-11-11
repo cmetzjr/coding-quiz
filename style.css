@@ -1,0 +1,28 @@
+/* litle room to breath */
+body {
+    padding: 2em;
+}
+
+/* override the default link colors */
+a {
+    color: rgb(128, 0, 128);
+}
+
+a:hover {
+    color: rgb(128, 0, 128);
+}
+
+/* style the buttons, leaving the default focus style as-is*/
+.btn-quiz {
+    color: #fff;
+    background-color: rgb(128, 0, 128);
+    border-color: rgb(128, 0, 128);
+    transition-duration: 0.4s;
+    letter-spacing: 0.05em;
+}
+
+.btn-quiz:hover {
+    background-color: rgb(128, 0, 128, .6);
+    border-color: rgb(128, 0, 128, .6);
+    color: #fff;
+}
